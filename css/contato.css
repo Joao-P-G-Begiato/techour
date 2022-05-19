@@ -1,0 +1,21 @@
+.card-largura {
+    max-width: 18rem;
+}
+
+.card-posicao-imagem {
+    object-fit: cover;
+  /*  object-position: 0 80%; */
+    height: 250px;
+}
+
+.rodape {
+    margin-top: 250px;
+}
+
+.nossasredes {
+   /* margin-top: 100px;
+    margin-bottom: 50px;*/
+    object-fit: cover;
+  /*  object-position: 0 80%; */
+    height: 250px;
+}
