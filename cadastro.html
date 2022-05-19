@@ -17,20 +17,57 @@
             </nav>
         </header>
         <main>
+            <h1> Cadastre-se na TecHour </h1>
+            <span>
+                Preenchendo seu perfil completamente é a melhor forma de se conectar com a comunidade Tech, portanto
+                ele deverá refletir seu estilo de vida, hobbies, linguagens ou métodos que gosta de utilizar ou tem interesse
+                em aprender, para alcançar seus objetivos pessoais e/ou profissionais.
+            </span>
             <form>
-                <label for="nome">Nome </label>
-                <input id="nome" name="nome" type="text" placeholder="Nome" required>
-                <label for="sobrenome">Sobrenome </label>
-                <input id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome" required>
-                <label for="senha">Senha</label>
-                <input id="senha" name="senha" type="text" placeholder="Senha" required>
-                <label for="confirmacao">Confirmação de Senha</label>
-                <input id="confirmacao" name="confirmacao" type="text" placeholder="confirmacao" required>
+                <h3> Dados de Login </h3>
+                    <label for="email">E-mail*</label>
+                    <input id="email" name="email" type="text" placeholder="email@example.com" required>
+                    <label for="confirmacaoe">Confirmação de E-mail*</label>
+                    <input id="confirmacaoe" name="confirmacaoe" type="text" placeholder="email@example.com" required><br>
+                    <label for="senha">Senha*</label>
+                    <input id="senha" name="senha" type="text" placeholder="Senha" required>
+                    <label for="confirmacao">Confirmação de Senha*</label>
+                    <input id="confirmacao" name="confirmacao" type="text" placeholder="Senha" required><br>
+                <h3> Dados Cadastrais </h3>
+                    <label for="nome">Nome* </label>
+                    <input id="nome" name="nome" type="text" placeholder="José Carlos" required>
+                    <label for="sobrenome">Sobrenome* </label>
+                    <input id="sobrenome" name="sobrenome" type="text" placeholder="dos Santos" required>
+                    <label for="nome-social">Nome social </label>
+                    <input id="nome-social" name="nome-social" type="text" placeholder="Maria do Carmo Souza">
+                    <label for="tel">Telefone / Celular* </label>
+                    <input id="tel" name="tel" type="text" placeholder="(DDD) 00000-0000" required>
+                    <label for="data">Data de Nascimento </label>
+                    <input id="data" name="data" type="date" required>
+                        <h4> Endereço </h4>
+                            <label for="cep">CEP*</label> 
+                            <input id="cep" name="cep" type="text" placeholder="10200-300" required>
+                            <button id="cep-sub"> confirmar CEP </button><span class="invalido"></span><br>
+                            <label for="logradouro">Logradouro*</label>
+                            <input id="logradouro" name="logradouro" type="text" placeholder="Av. Brasil" required disabled>
+                            <label for="bairro">Bairro*</label>
+                            <input id="bairro" name="bairro" type="text" placeholder="Vila Comercial" required disabled>
+                            <label for="cidade">Cidade*</label>
+                            <input id="cidade" name="cidade" type="text" placeholder="Brasília" required disabled>
+                            <label for="estado">Estado*</label>
+                            <input id="estado" name="estado" type="text" placeholder="Distrito Federal" required disabled>
+                            <label for="number">Número*</label>
+                            <input id="number" name="number" type="text" placeholder="230" required>
+                            <label for="Complemento">Complemento</label>
+                            <input id="Complemento" name="Complemento" type="text" placeholder="Bloco 3 - AP 12" required><br>
+                <input type="submit" id="submit">
             </form>
         </main>
         <footer>
-            FrontEnder © All Rights Reserved
+            FrontEnders © All Rights Reserved
             Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="./js/cadastro.js"></script>
     </body>
 </html>
