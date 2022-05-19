@@ -3,7 +3,20 @@
     padding: 0;
 }
 
+/*body {
+    background-color: #111008;
+} */
+
+.btn {
+    background-color: #1d1d0c;
+    color: #e9973e;
+}
+
 .rodape {
-    position: fixed;
-    margin-bottom: 0px; 
+    margin-top: 250px;
+}
+
+.jumbotron {
+    background-color: #e9973e;
+    margin-top: 150px;
 }

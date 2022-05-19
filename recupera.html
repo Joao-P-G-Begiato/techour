@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +9,42 @@
         <title>Techour</title>
     </head>
     <body>
+
         <header>
-            <nav>
-                <a href="./index.html"> Home </a>
-                <a href="./login.html"> Entrar </a>
-                <a href="./cadastro.html"> Cadastro </a>
-                <a href="./contato.html"> Contato  </a>
-                <a href="./sobre.html"> Sobre </a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">TecHour</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Sobre</a>
+                    <a class="nav-item nav-link" href="#">Entrar</a>
+                    <a class="nav-item nav-link" href="#">Cadastro</a>
+                    <a class="nav-item nav-link" href="#">Contato</a> 
+                  </div>
+                </div>
             </nav>
         </header>
         <main>
 
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <p class="display-4"><h2>Digite seu email para receber o link de recuperação de senha</h2></p>
+                  <p class="display-4 "><h5>Esqueceu sua senha? Digite seu email para receber o link de recuperação.</h5></p>
                   <form>
                     <div class="form-group row">
-                     <!--   <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label> -->
-                        <div class="col-sm-10">
+                        <div class="col-sm-8">
                           <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Digite aqui seu e-mail">
                         </div>
-                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn">Enviar</button>
                   </form>
-                <!--  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
                 </div>
               </div>
 
 
         </main>
-        <footer class="rodape">
+        <footer class="rodape d-flex justify-content-center">
             FrontEnder © All Rights Reserved
             Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
         </footer>
