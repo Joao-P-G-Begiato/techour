@@ -1,41 +1,33 @@
-let cep =""
-
-$("#cep-sub").click(function(e){
-    e.preventDefault()
-    alert("tá chamando funcionando apertar o botão")
-    manipulaCEP($("#cep").val())
-})
-
-function confereCEP (cep){
-    if(cep.length == 8){
-        return `${cep} pelo confere CEP`
-    }else{
-        $(".invalido").html("CEP informado é inválido tente novamente")
-        $(".invalido").css("color", "red")
-        $(".invalido").css("gap", "red")
-    }
+function preencheCampos(results){
+    logradouro(results.logradouro)
+    bairro(results.bairro)
+    cidade(results.localidade)
+    estado(results.uf)
+    pais()
+    complemento(results.complemento)
 }
 
-
-
-function manipulaCEP(){
-    const ref = "0123456789"
-    let entrada = $("#cep").val().split("")
-    let retorno =""
-    for(let i=0 ; i< entrada.length; i++){
-        if (ref.indexOf(entrada[i])>=0){
-            retorno += entrada[i]
-        }
-    }
-    return confereCEP(retorno)
+function logradouro(rua){
+    $("#logradouro").removeAttr("disabled")
+    $("#logradouro").val(rua)
 }
-
-function chamaCEP(cep){
-    $.ajax({
-        url: `viacep.com.br/ws/${cep}/json/`,
-        success: function(results){
-
-        }
-
-})}
-
+function bairro(bairro){
+    $("#bairro").removeAttr("disabled")
+    $("#bairro").val(bairro)
+}
+function cidade(cidade){
+    $("#cidade").removeAttr("disabled")
+    $("#cidade").val(cidade)
+}
+function estado(estado){
+    $("#estado").val(estado)
+    $("#estado").removeAttr("disabled")
+}
+function pais(){
+    $("#pais").val("Brasil")
+    $("#pais").removeAttr("disabled")
+}
+function complemento(comp){
+    $("#complemento").removeAttr("disabled")
+    $("#complemento").val(comp)
+}

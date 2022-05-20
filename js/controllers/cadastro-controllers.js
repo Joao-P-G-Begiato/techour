@@ -8,7 +8,7 @@ $("#cep-sub").click(function(e){
 
 function confereCEP (cep){
     if(cep.length == 8){
-        return `${cep} pelo confere CEP`
+        chamaCEP(cep)
     }else{
         $(".invalido").html("CEP informado é inválido tente novamente")
         $(".invalido").css("color", "red")
@@ -30,11 +30,15 @@ function manipulaCEP(){
     return confereCEP(retorno)
 }
 
+let adress = ""
+
 function chamaCEP(cep){
     $.ajax({
-        url: `viacep.com.br/ws/${cep}/json/`,
+        url: `https://viacep.com.br/ws/${cep}/json/`,
         success: function(results){
-
+            adress = results
+            preencheCampos(results)
+            return adress
         }
 
 })}
