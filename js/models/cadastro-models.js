@@ -8,6 +8,18 @@ class User {
         this.birthday = birthday
     }
 
+    setPassword(newPassword,passConfirmation){
+        try{            
+            if(newPassword=passConfirmation){
+                this.password=newPassword
+            }else{
+                throw new Error("Senha e Confirmação de Senha não são correspondentes")
+            }
+        }catch(erro){
+            console.log(error)
+        }
+    }
 
 }
+
 

@@ -30,7 +30,6 @@ function manipulaCEP(){
     return confereCEP(retorno)
 }
 
-let adress = ""
 
 function chamaCEP(cep){
     $.ajax({
@@ -38,8 +37,8 @@ function chamaCEP(cep){
         success: function(results){
             adress = results
             preencheCampos(results)
-            return adress
         }
 
 })}
+
 
