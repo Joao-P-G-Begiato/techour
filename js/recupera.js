@@ -11,7 +11,7 @@
 
  function guardar(){
     let mensagem = document.querySelector('#mensagemvalidacao');
-    mensagem.innerHTML = 'Enviou'
+    mensagem.innerHTML = 'Enviado com sucesso! Acesse o link para recuperação de senha enviado para o seu e-mail.'
   // return mensagem;
      
  }

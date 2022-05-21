@@ -9,9 +9,17 @@ body {
     background-repeat: no-repeat;
 }
 
+.container_um {
+    padding-top: 150px;
+}
+
 .btn {
     background-color: #1d1d0c;
     color: #e9973e;
+}
+
+.btn:hover {
+    color: white;
 }
 
 .rodape {
@@ -29,4 +37,5 @@ body {
 
 .txtvalidacao {
     font-weight: bold;
+    font-size: 20pt;
 }

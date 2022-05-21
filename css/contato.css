@@ -4,7 +4,6 @@
 
 .card-posicao-imagem {
     object-fit: cover;
-  /*  object-position: 0 80%; */
     height: 250px;
 }
 
@@ -13,10 +12,19 @@
 }
 
 .nossasredes {
-   /* margin-top: 100px;
-    margin-bottom: 50px;*/
     object-fit: cover;
-  /*  object-position: 0 80%; */
     height: 250px;
     background-color: #e9973e;
+}
+
+.imagem-linkedin {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.imagem-github {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
