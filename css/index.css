@@ -3,19 +3,18 @@ body {
     height: 100vh;
 }
 
-.footer {
-    position: fixed;
-    margin-bottom: 0px;
+.navbar {
+    background-color: #e9973a;
 }
 
 .jumbotron {
-    width: 600px;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 #div-footer {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 #main {
@@ -25,4 +24,17 @@ body {
     align-items: center;
     width: 100%;
     height: 95%;
+    background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+#btn {
+    background-color: #e9973a;
+    border-color: #e9973a;
+    color: black;
+}
+
+.display-4 {
+    font-weight: bolder;
 }
