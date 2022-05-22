@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">TecHour</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -36,33 +36,50 @@
             </div>
     </nav>
 
-    <div class="mt-5">
-        <form class="form-signin border border-light">
-            <div class="text-center mb-4">
-                <h1 class="h3 mb-3 font-weight-normal">TecHour</h1>
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+        <div class="container">
+            <div class="card login-card">
+                <div class="row no-gutters">
+                    <div class="col-md-7">
+                        <img src="./assets/images/imagem-login.jpg" class="login-card-img">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card-body">
+                            <div class="card-titulo">
+                                <h2 class="font-weight-bold">Entrar no TecHour</h2>
+                            </div>
+                            <p class="login-card-descricao">Conectando você a sua rede de amigos</p>
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="font-weight-bold form-label">Usuário</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Email" autofocus>
+                                </div>
+                                <div class="alert alert-danger m-2" role="alert" id="erro" hidden></div>
+
+                                <div class="form-group mb-4">
+                                    <label for="senha" class="font-weight-bold form-label">Senha</label>
+                                    <input type="password" id="senha" class="form-control" placeholder="senha">
+                                </div>
+                                <div class="alert alert-danger m-2" role="alert" id="senhaErro" hidden></div>
+
+                                <button id="submit" class="btn btn-block login-btn mb-4 text-uppercase"
+                                    type="submit">Entrar</button>
+                            </form>
+
+                            <a href="" class="text-decoration-none senha-link"><i class='fas'>&#xf023;</i> Esqueceu sua
+                                senha?</a>
+                            <div class="alert alert-success mt-4" id="msg-sucesso" role="alert" hidden>
+                                <h4>Seu login foi realizado com sucesso!</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </main>
 
-            <div class="form-label-group mb-1">
-                <label for="inputEmail">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Email" required autofocus>
-                <div class="alert alert-danger m-2" role="alert" id="erro" hidden></div>
-            </div>
-
-            <div class="form-label-group">
-                <label for="inputPassword">Senha</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-            </div>
-            <div class="alert alert-danger m-2" role="alert" id="senhaErro" hidden></div>
-
-            <div class="mb-1">
-                <a>Esqueceu sua senha?</a>
-            </div>
-
-            <button class="btn btn-lg btn-primary btn-block" id="submit" type="submit">Entrar</button>
-
-        </form>
-    </div>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -73,6 +90,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="/login/assets/js/script.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </body>
 
 </html>
