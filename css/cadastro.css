@@ -3,3 +3,26 @@ form{
     margin: 0vw 10vw
 }
 
+main{
+    padding: 1rem;
+}
+
+body{
+    padding: 0.05rem;
+}
+
+footer{
+    padding: 0 0 0 1rem;
+}
+
+form{
+    color: #e9973A;
+    background-color: #0d0905;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color: #e9973A;
+    color:#0d0905
+}
