@@ -63,5 +63,22 @@
 }
 
 .div-cards {
-    height: 700px;
+    height: 900px;
+    background-color: white;
+}
+
+.card-img-top1 {
+    object-fit: cover;
+    height: 190px;
+    object-position: 25% 17%;
+}
+
+.card-img-top2 {
+    object-fit: cover;
+    height: 190px;
+    object-position: 25% 40%;
+}
+
+.card {
+    border: none
 }
