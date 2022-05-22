@@ -1,38 +1,15 @@
-let erro = $('#erro');
 let senhaErro = $('#senhaErro');
+let erro = $('#erro');
 
 $("#submit").click(function (e) {
     e.preventDefault();
 
     let email = $("#email").val();
-    let senha = $("#inputPassword").val();
+    let senha = $("#senha").val();
 
-    if (email == "") {
-        console.log("email vazio");
-        erro.html('<span>⚠︎ campo obrigatório</span>');
-        erro.removeAttr('hidden');
-        $('#email').addClass('is-invalid');
-    }else if (validaEmail(email) == false) {
-        console.log('email incorreto');
-        erro.html('<span>⚠︎ campo incorreto</span>');
-        erro.removeAttr('hidden');
-        $('#email').addClass('is-invalid');
-
-    }else if (validaEmail(email) == true) {
-        $('#email').removeClass('is-invalid').addClass('is-valid');
-        erro.attr('hidden', true);
-    }else {
-        $('#email').removeClass('is-invalid').addClass('is-valid');
-        erro.attr('hidden', true);
-
-    } if (senha == ""){
-        senhaErro.html('<span>⚠︎ campo obrigatório</span>');
-        senhaErro.removeAttr('hidden');
-        $('#inputPassword').addClass('is-invalid');
-    } else {
-        $('#inputPassword').removeClass('is-invalid').addClass('is-valid');
-        senhaErro.attr('hidden', true);
-    }
+    confereEmail(email);
+    confereSenha(senha);
+    msgSucesso(email, senha);
 
 });
 
@@ -43,4 +20,41 @@ function validaEmail(email) {
     } else {
         return true;
     }
+}
+
+function confereEmail(email) {
+    if (email == "") {
+        erro.html('<span>⚠︎ campo obrigatório</span>');
+        erro.removeAttr('hidden');
+        $('#email').addClass('is-invalid');
+    } else if (validaEmail(email) == false) {
+        erro.html('<span>⚠︎ campo incorreto</span>');
+        erro.removeAttr('hidden');
+        $('#email').addClass('is-invalid');
+
+    } else if (validaEmail(email) == true) {
+        $('#email').removeClass('is-invalid').addClass('is-valid');
+        erro.attr('hidden', true);
+    } else {
+        $('#email').removeClass('is-invalid').addClass('is-valid');
+        erro.attr('hidden', true);
+    }
+
+}
+
+function confereSenha(senha) {
+    if (senha == "") {
+        senhaErro.html('<span>⚠︎ campo obrigatório</span>');
+        senhaErro.removeAttr('hidden');
+        $('#senha').addClass('is-invalid');
+    } else {
+        $('#senha').removeClass('is-invalid').addClass('is-valid');
+        senhaErro.attr('hidden', true);
+        return true
+    }
+
+}
+
+function msgSucesso(email, senha) {
+    (validaEmail(email) === true && confereSenha(senha) === true) ? $('#msg-sucesso').removeAttr('hidden') : "false";
 }
