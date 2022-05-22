@@ -4,74 +4,134 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="./css/cadastro.css" rel="stylesheet">
         <title>Techour</title>
     </head>
     <body>
         <header>
-            <nav>
-                <a href="./index.html"> Home </a>
-                <a href="./login.html"> Entrar </a>
-                <a href="./cadastro.html"> Cadastro </a>
-                <a href="./contato.html"> Contato  </a>
-                <a href="./sobre.html"> Sobre </a>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e9973a">
+                <a class="navbar-brand" href="http://127.0.0.1:5501/index.html">TecHour</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="./index.html">Home</a>
+                    <a class="nav-item nav-link" href="./sobre.html">Sobre</a>
+                    <a class="nav-item nav-link active" href="./cadastro.html">Cadastro</a>
+                    <a class="nav-item nav-link" href="./contato.html">Contato</a> 
+                    <a class="nav-item nav-link" href="./login/login.html">Entrar</a>
+                  </div>
+                </div>
             </nav>
         </header>
-        <main>
+        <main class="main">
             <h1> Cadastre-se na TecHour </h1>
             <span>
                 Preenchendo seu perfil completamente é a melhor forma de se conectar com a comunidade Tech, portanto
                 ele deverá refletir seu estilo de vida, hobbies, linguagens ou métodos que gosta de utilizar ou tem interesse
                 em aprender, para alcançar seus objetivos pessoais e/ou profissionais.
             </span>
+            <br><br>
             <form>
                 <h3> Dados de Login </h3>
-                    <label for="email">E-mail*</label>
-                    <input id="email" name="email" type="text" placeholder="email@example.com" required>
-                    <label for="confirmacaoe">Confirmação de E-mail*</label>
-                    <input id="confirmacaoe" name="confirmacaoe" type="text" placeholder="email@example.com" required><br>
-                    <label for="senha">Senha*</label>
-                    <input id="senha" name="senha" type="text" placeholder="Senha" required>
-                    <label for="confirmacao">Confirmação de Senha*</label>
-                    <input id="confirmacao" name="confirmacao" type="text" placeholder="Senha" required><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label" for="email">E-mail*</label>
+                        <input class="form-control form-control-sm" id="email" name="email"  type="email" placeholder="email@example.com" required>
+                        <label class="form-label" for="confirmacaoe">Confirmação de E-mail*</label>
+                        <input class="form-control form-control-sm" id="confirmacaoe" name="confirmacaoe" type="email" placeholder="email@example.com" required><br>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label muted" for="senha" >Senha*</label>
+                        <input class="form-control form-control-sm" id="senha" name="senha" type="password" placeholder="Senha" required> 
+                        <label class="form-label" for="confirmacao">Confirmação de Senha*</label>
+                        <input class="form-control form-control-sm" id="confirmacao" name="confirmacao" type="password" placeholder="Senha" required><br>
+                    </div>
+                    <div class ="col-md-4">
+                        <p> sua senha deve conter: caractéres <b> maiúsculo |</b> <b> minúsculo |</b> <b> especiais (- + _! @ # $% ^ & *.,?) |</b><b> numérico</b>
+                
+                    </div>
+                </div>
                 <h3> Dados Cadastrais </h3>
-                    <label for="nome">Nome* </label>
-                    <input id="nome" name="nome" type="text" placeholder="José Carlos" required>
-                    <label for="sobrenome">Sobrenome* </label>
-                    <input id="sobrenome" name="sobrenome" type="text" placeholder="dos Santos" required>
-                    <label for="nome-social">Nome social </label>
-                    <input id="nome-social" name="nome-social" type="text" placeholder="Maria do Carmo Souza">
-                    <label for="tel">Telefone / Celular* </label>
-                    <input id="tel" name="tel" type="text" placeholder="(DDD) 00000-0000" required>
-                    <label for="data">Data de Nascimento </label>
-                    <input id="data" name="data" type="date" required>
-                        <h4> Endereço </h4>
-                            <label for="cep">CEP*</label> 
-                            <input id="cep" name="cep" type="text" placeholder="10200-300" required>
-                            <button id="cep-sub"> confirmar CEP </button><span class="invalido"></span><br>
-                            <label for="logradouro">Logradouro*</label>
-                            <input id="logradouro" name="logradouro" type="text" placeholder="Av. Brasil" required disabled>
-                            <label for="bairro">Bairro*</label>
-                            <input id="bairro" name="bairro" type="text" placeholder="Vila Comercial" required disabled>
-                            <label for="cidade">Cidade*</label>
-                            <input id="cidade" name="cidade" type="text" placeholder="Brasília" required disabled>
-                            <label for="estado">Estado*</label>
-                            <input id="estado" name="estado" type="text" placeholder="Distrito Federal" required disabled>
-                            <label for="pais">País*</label>
-                            <input id="pais" name="pais" type="text" placeholder="Brasil" required disabled>
-                            <label for="number">Número*</label>
-                            <input id="number" name="number" type="text" placeholder="230" required>
-                            <label for="Complemento">Complemento</label>
-                            <input id="Complemento" name="Complemento" type="text" placeholder="Bloco 3 - AP 12" required><br>
-                <input type="submit" id="submit">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label" for="nome">Nome* </label>
+                        <input class="form-control form-control-sm" id="nome" name="nome" type="text" placeholder="José Carlos" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label class="form-label" for="sobrenome">Sobrenome* </label>
+                        <input class="form-control form-control-sm" id="sobrenome" name="sobrenome" type="text" placeholder="dos Santos" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="nome-social">Nome social </label>
+                        <input class="form-control form-control-sm" id="nome-social" name="nome-social" type="text" placeholder="Maria do Carmo Souza">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label" for="tel">Telefone / Celular* </label>
+                        <input class="form-control form-control-sm" id="tel" name="tel" type="text" placeholder="(DDD) 00000-0000" required>
+                    </div>
+                    <div class="col-md-2">
+                    <label class="form-label" for="data">Data de Nascimento </label>
+                        <input class="form-control form-control-sm" id="data" name="data" type="date" required>
+                    </div>
+                </div><br>
+                <h3> Endereço </h3>
+                <div class="row">
+                    <label class="form-label" for="cep">CEP*</label>
+                    <div class="col-md-3">
+                        <input class="form-control form-control-sm " id="cep" name="cep" type="text" placeholder="10200-300" required>
+                    </div>
+                    <div class="col-md-9">
+                        <button class="btn btn-outline-dark" id="cep-sub"> Confirmar CEP </button>
+                        <span class="invalido"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="form-label" for="logradouro">Logradouro*</label>
+                        <input class="form-control form-control-sm" id="logradouro" name="logradouro" type="text" placeholder="Av. Brasil" required disabled>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label" for="number">Número*</label>
+                        <input class="form-control form-control-sm" id="number" name="number" type="text" placeholder="230" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="Complemento">Complemento</label>
+                        <input class="form-control form-control-sm" id="Complemento" name="Complemento" type="text" placeholder="Bloco 3 - AP 12" required><br>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="bairro">Bairro*</label>
+                        <input class="form-control form-control-sm" id="bairro" name="bairro" type="text" placeholder="Vila Comercial" required disabled>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="cidade">Cidade*</label>
+                        <input class="form-control form-control-sm" id="cidade" name="cidade" type="text" placeholder="Brasília" required disabled>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="estado">Estado*</label>
+                        <input class="form-control form-control-sm" id="estado" name="estado" type="text" placeholder="Distrito Federal" required disabled>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label" for="pais">País*</label>
+                        <input class="form-control form-control-sm" id="pais" name="pais" type="text" placeholder="Brasil" required disabled><br>
+                    </div>
+                </div>
+                <input class ="btn btn-outline-dark" type="submit" id="submit">
             </form>
         </main>
-        <footer>
-            FrontEnders © All Rights Reserved
+        <footer id="footer" style="background-color: #e9973a">
+            FrontEnder © All Rights Reserved<br>
             Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="./js/models/cadastro-models.js"></script>
         <script src="./js/views/cadastro-views.js"></script>
         <script src="./js/controllers/cadastro-controllers.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     </body>
 </html>

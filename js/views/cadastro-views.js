@@ -31,3 +31,16 @@ function complemento(comp){
     $("#complemento").removeAttr("disabled")
     $("#complemento").val(comp)
 }
+
+
+
+
+function validaSenha(txt){
+    if(pattern.test(txt) && pattern2.test(txt) && pattern3.test(txt) && pattern4.test(txt)){
+        $("#senha").attr("class", "form-control form-control-sm is-valid")
+    }else if (txt === ""){
+        $("#senha").attr("class", "form-control form-control-sm")
+    }else{
+        $("#senha").attr("class", "form-control form-control-sm is-invalid")
+    }
+}
