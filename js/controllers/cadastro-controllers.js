@@ -2,17 +2,18 @@ let cep =""
 
 $("#cep-sub").click(function(e){
     e.preventDefault()
-    alert("tá chamando funcionando apertar o botão")
     manipulaCEP($("#cep").val())
 })
 
 function confereCEP (cep){
     if(cep.length == 8){
         chamaCEP(cep)
+        $(".invalido").empty()
+        $("#cep").attr("class" ,"form-control form-control-sm is-valid")
     }else{
         $(".invalido").html("CEP informado é inválido tente novamente")
         $(".invalido").css("color", "red")
-        $(".invalido").css("gap", "red")
+        $("#cep").attr("class" ,"form-control form-control-sm is-invalid")
     }
 }
 
@@ -35,10 +36,15 @@ function chamaCEP(cep){
     $.ajax({
         url: `https://viacep.com.br/ws/${cep}/json/`,
         success: function(results){
-            adress = results
             preencheCampos(results)
+        },
+        error: function(erro){
+            console.log(erro)
         }
 
 })}
 
+$("#senha").keyup(function(){
+    validaSenha($("#senha").val())
+})
 
