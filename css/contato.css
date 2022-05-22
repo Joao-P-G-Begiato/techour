@@ -1,0 +1,30 @@
+.card-largura {
+    max-width: 18rem;
+}
+
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 250px;
+}
+
+.rodape {
+    margin-top: 250px;
+}
+
+.nossasredes {
+    object-fit: cover;
+    height: 250px;
+    background-color: #e9973e;
+}
+
+.imagem-linkedin {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.imagem-github {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
