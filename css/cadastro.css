@@ -24,5 +24,9 @@ form{
 
 .btn{
     background-color: #e9973A;
-    color:#0d0905
+    color:#0d0905;
+}
+
+.butao{
+    gap: 20px;
 }
