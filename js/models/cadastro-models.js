@@ -46,7 +46,6 @@ function confereCEP (cep){
     }
 }
 
-
 const pattern = new RegExp ("^(.*[a-z])")
 const pattern2 = new RegExp ("^(.*[A-Z])")
 const pattern3 = new RegExp ("^(.*[0-9])")

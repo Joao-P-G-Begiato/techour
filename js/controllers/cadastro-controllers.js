@@ -5,13 +5,6 @@ $("#cep-sub").click(function(e){
     manipulaCEP($("#cep").val())
 })
 
-
-
-
-
-
-
-
 function chamaCEP(cep){
     $.ajax({
         url: `https://viacep.com.br/ws/${cep}/json/`,

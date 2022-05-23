@@ -17,16 +17,12 @@ footer{
 
 form{
     color: #e9973A;
-    background-color: #0d0905;
+    background-color: #111008;
     padding: 2vw;
     border-radius: 10px;
 }
 
 .btn{
     background-color: #e9973A;
-    color:#0d0905;
-}
-
-.butao{
-    gap: 20px;
+    color:#111008
 }
