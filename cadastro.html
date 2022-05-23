@@ -11,19 +11,19 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e9973a">
-                <a class="navbar-brand" href="http://127.0.0.1:5501/index.html">TecHour</a>
+                <a class="navbar-brand" href="./index.html">TecHour</a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="./index.html">Home</a>
-                    <a class="nav-item nav-link" href="./sobre.html">Sobre</a>
-                    <a class="nav-item nav-link active" href="./cadastro.html">Cadastro</a>
-                    <a class="nav-item nav-link" href="./contato.html">Contato</a> 
-                    <a class="nav-item nav-link" href="./login/login.html">Entrar</a>
-                  </div>
+                    <div class="navbar-nav">
+                     <a class="nav-item nav-link" href="./index.html">Home</a>
+                     <a class="nav-item nav-link" href="./sobre.html">Sobre</a>
+                     <a class="nav-item nav-link active" href="./cadastro.html">Cadastro</a>
+                     <a class="nav-item nav-link" href="./contato.html">Contato</a> 
+                     <a class="nav-item nav-link" href="./login/login.html">Entrar</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -74,7 +74,7 @@
                         <input class="form-control form-control-sm" id="tel" name="tel" type="text" placeholder="(DDD) 00000-0000" required>
                     </div>
                     <div class="col-md-2">
-                    <label class="form-label" for="data">Data de Nascimento </label>
+                        <label class="form-label" for="data">Data de Nascimento </label>
                         <input class="form-control form-control-sm" id="data" name="data" type="date" required>
                     </div>
                 </div><br>
@@ -122,10 +122,12 @@
                 <input class ="btn btn-outline-dark" type="submit" id="submit">
             </form>
         </main>
-        <footer id="footer" style="background-color: #e9973a">
-            FrontEnder © All Rights Reserved<br>
-            Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
-        </footer>
+        <div class="fixed-bottom justify-content-center" style="background-color: #e9973a" id="div-footer">
+            <footer id="footer" style="background-color: #e9973a">
+                FrontEnder © All Rights Reserved<br>
+                Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
+            </footer>
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="./js/models/cadastro-models.js"></script>
         <script src="./js/views/cadastro-views.js"></script>
