@@ -29,9 +29,9 @@ body {
 .box {
     width: 900px;
     height: 400px;
-    background-color: rgba(0, 0, 0, 0.214);
-    margin-top: 100px;
-    margin-left: 400px;
+    background-color: rgba(0, 0, 0, 0.239);
+    margin-top: 75px;
+    margin-left: 300px;
     color: white;
 }
 
@@ -39,3 +39,10 @@ body {
     font-weight: bold;
     font-size: 20pt;
 }
+
+#div-footer {
+    display: flex;
+    text-align: center;
+  }
+
+
