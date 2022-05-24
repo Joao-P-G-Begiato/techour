@@ -83,6 +83,18 @@ body {
   color: rgb(242, 242, 242);
 }
 
+footer{
+  background-color: #e9973a
+}
+
+footer a{
+  color: #0d0905;
+}
+
+a:hover{
+  color: rgb(242, 242, 242);;
+}
+
 @media (max-width: 422px) {
   .login-card .card-body {
     padding: 35px 24px;
