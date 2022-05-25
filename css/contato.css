@@ -63,6 +63,17 @@
   color: white;
 }
 
+.nav-bgcolor {
+  background-color: #e9973a
+}
+
+.div-bgcolor{
+  background-color: #e9973a;
+}
+
+.footer-bgcolor {
+  background-color: #e9973a;
+}
 @media (max-width: 900px){
   html{
    font-size: 12px;
