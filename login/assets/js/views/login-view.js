@@ -1,27 +1,3 @@
-let senhaErro = $('#senhaErro');
-let erro = $('#erro');
-
-$("#submit").click(function (e) {
-    e.preventDefault();
-
-    let email = $("#email").val();
-    let senha = $("#senha").val();
-
-    confereEmail(email);
-    confereSenha(senha);
-    msgSucesso(email, senha);
-
-});
-
-function validaEmail(email) {
-    const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-    if (!reg.test(email)) {
-        return false;
-    } else {
-        return true;
-    }
-}
-
 function confereEmail(email) {
     if (email == "") {
         erro.html('<span>⚠︎ campo obrigatório</span>');
