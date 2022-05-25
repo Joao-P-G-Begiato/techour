@@ -27,3 +27,7 @@ main{
     outline: 0;
     box-shadow: 0 0 0 0.1rem #e9973ae8;
 }
+
+.dados-invalidos{
+    color:red
+}
