@@ -1,11 +1,20 @@
 class User {
-    constructor(name, login, password, adress,phone, birthday){
+    constructor(name, socialName, login, password, adress, phone, birthday){
         this.name = name
+        this.socialName = socialName
         this.login = login
         this.password = password
         this.adress = adress
         this.phone = phone
         this.birthday = birthday
+    }
+
+    setName(newName){
+        this.name=newName
+    }
+
+    setSocialName(newSocialName){
+        this.socialName = newSocialName
     }
 
     setPassword(newPassword,passConfirmation){
@@ -19,7 +28,22 @@ class User {
              console.log(error)
         }
     }
+
+    setAdress(newAdress){
+        this.adress=newAdress
+    }
+
+    setPhone(newPhone){
+        this.phone=newPhone
+    }
+
+    setBirthday(newBirthday){
+        this.birthday=newBirthday
+    }
+    
 }
+
+let newUser = ""
 
 function sanitizaCEP(){
     const ref = "0123456789"
@@ -49,3 +73,16 @@ const pattern = new RegExp ("^(.*[a-z])")
 const pattern2 = new RegExp ("^(.*[A-Z])")
 const pattern3 = new RegExp ("^(.*[0-9])")
 const pattern4 = new RegExp ("^(.*[- + _! @ # $% ^ & *.,?])")
+
+function usuarioNovo(){
+    let adress = `${$("#logradouro").val()}, ${$("#number").val()} - ${$("#complemento").val()} - ${$("#bairro").val()} , ${$("#cidade").val()} - ${$("#estado").val()} - ${$("#pais").val()}, ${$("#cep").val()}`
+    let name = `${$("#nome").val()} ${$("#sobrenome").val()}`
+    let socialName = $("#nome-social").val()
+    let phone = $("#tel").val()
+    let password = $("#senha").val()
+    let login = $("#email").val()
+    let birthday = $("#data").val()
+
+    newUser = new User(name, socialName, login, password, adress, phone, birthday)
+
+}
