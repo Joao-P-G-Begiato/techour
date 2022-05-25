@@ -16,13 +16,12 @@ class User {
                 throw new Error("Senha e Confirmação de Senha não são correspondentes")
             }
         }catch(erro){
-            console.log(error)
+             console.log(error)
         }
     }
-
 }
 
-function manipulaCEP(){
+function sanitizaCEP(){
     const ref = "0123456789"
     let entrada = $("#cep").val().split("")
     let retorno =""
