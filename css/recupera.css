@@ -24,7 +24,23 @@ body {
 
 .rodape {
     margin-top: 15.625rem;
+   
 }
+
+.nav-bgcolor {
+    background-color: #e9973a;
+}
+
+.div-bgcolor {
+    background-color: #e9973a;
+    width: 100vw;
+    
+}
+
+.footer-bgcolor {
+    background-color: #e9973a;
+}
+
 
 .box {
      width: 56.25rem;
