@@ -44,6 +44,15 @@
   height: 30px;
 }
 
+.botao-cor {
+  background-color: #111008;
+  color: #e9973e;
+}
+
+.botao-cor:hover {
+  color: white;
+}
+
 #div-footer {
   display: flex;
   text-align: center;

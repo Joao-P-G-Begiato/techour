@@ -45,7 +45,11 @@ body {
     text-align: center;
   }
 
-  @media (max-width: 900px){
+.entrada-email {
+    width: 400px;
+  }
+
+@media (max-width: 900px){
     html{
      font-size: 12px;
      height: 98vh;
@@ -53,14 +57,14 @@ body {
     
   }
   
-  @media (max-width:700px){
+@media (max-width:700px){
     html{
         font-size: 10px;
         height: 98vh;
    
   }
   
-  @media (max-width:500px){
+@media (max-width:500px){
     html{
         font-size: 8px;
         height: 98vh;
