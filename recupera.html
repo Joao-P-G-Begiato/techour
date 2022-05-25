@@ -21,7 +21,7 @@
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="./index.html">Home</a>
             <a class="nav-item nav-link" href="./sobre.html">Sobre</a>
-            <a class="nav-item nav-link active" href="./cadastro.html">Cadastro</a>
+            <a class="nav-item nav-link" href="./cadastro.html">Cadastro</a>
             <a class="nav-item nav-link" href="./contato.html">Contato</a> 
            <a class="nav-item nav-link" href="./login/login.html">Entrar</a>
           </div>
@@ -29,17 +29,18 @@
       </nav>
     </header>
 
-    <main class="container_um">
+    <main class="container_um d-flex justify-content-center">
 
       <div class="box rounded">
         <p class="paragrafo pt-4"><h4 class="txt ml-5"><b>Esqueceu sua senha?</b>
         <br>Não tem problema! Digite seu email para receber o link de recuperação.</h4></p>
         <form id="formulario">
           <div class="form-group row">
-            <div class="col-sm-6">
-              <input class="form-control form-control-lg ml-5" id="emailrecupera" placeholder="Digite aqui seu e-mail">
+            <div class="col-sm-2">
+              <input type="email" class="entrada-email form-control form-control-lg ml-5" id="emailrecupera" placeholder="Digite aqui seu e-mail">
+              <button type="submit" class="btn ml-5" id="btn1">Enviar</button>
             </div>
-            <button type="submit" class="btn ml-5" id="btn1">Enviar</button>         
+                     
           </div>
         </form>  
                 
@@ -51,8 +52,8 @@
     </main>
     <div class="fixed-bottom justify-content-center" style="background-color: #e9973a" id="div-footer">
       <footer id="footer" style="background-color: #e9973a">
-        FrontEnder © All Rights Reserved<br>
-        Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
+        FrontEnders © All Rights Reserved
+        Squad 7™
       </footer>
     </div>
 

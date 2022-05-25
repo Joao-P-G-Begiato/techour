@@ -1,5 +1,12 @@
+/* body {
+  width: 100vw;
+} */
+
+
+
 .card-largura {
   max-width: 18rem;
+  
 }
 
 .card-posicao-imagem {
@@ -7,24 +14,79 @@
   height: 250px;
 }
 
-.rodape {
+
+/*.rodape {
   margin-top: 250px;
-}
+} */
 
 .nossasredes {
-  object-fit: cover;
-  height: 250px;
-  background-color: #e9973e;
+  height: 200px;
+  background-color: #111008;
+  color: #e9973a ;
+
 }
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 .imagem-linkedin {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .imagem-github {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+.botao-cor {
+  background-color: #111008;
+  color: #e9973e;
+}
+
+.botao-cor:hover {
+  color: white;
+}
+
+#div-footer {
+  display: flex;
+  text-align: center;
+  
+}
+
+.modal1 {
+  color: white;
+}
+
+@media (max-width: 900px){
+  html{
+   font-size: 12px;
+  }
+  
+}
+
+@media (max-width:700px){
+  html{
+      font-size: 10px;
+ 
+}
+
+@media (max-width:500px){
+  html{
+      font-size: 8px;
+  }
+  
+}
+
+@media (max-width:300px){
+  html{
+      font-size: 6px;
+  }
+  
+}
 }
