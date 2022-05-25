@@ -86,3 +86,6 @@ function usuarioNovo(){
     newUser = new User(name, socialName, login, password, adress, phone, birthday)
 
 }
+
+const userZero = new User("Jarros", "", "jarros@resilia.com", "FacilitadorTech#1", "Rua dos Jarros, T-18" , "(21)99999-9999", "2022-05-25")
+const userUm = new User("Ana", "", "ana@resilia.com", "FacilitadorSoft#1", "Rua Segredos da Meia noite, T-18" , "(21)99999-9999", "2022-05-25")
