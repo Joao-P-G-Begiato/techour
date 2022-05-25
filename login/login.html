@@ -14,26 +14,26 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e9973a">
-            <a class="navbar-brand" href="./index.html">TecHour</a>
+            <a class="navbar-brand" href="/index.html">TecHour</a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="./index.html">Home</a>
-                    <a class="nav-item nav-link" href="./sobre.html">Sobre</a>
-                    <a class="nav-item nav-link active" href="./cadastro.html">Cadastro</a>
-                    <a class="nav-item nav-link" href="./contato.html">Contato</a> 
-                    <a class="nav-item nav-link" href="./login/login.html">Entrar</a>
+                    <a class="nav-item nav-link" href="/index.html">Home</a>
+                    <a class="nav-item nav-link" href="/sobre.html">Sobre</a>
+                    <a class="nav-item nav-link" href="/cadastro.html">Cadastro</a>
+                    <a class="nav-item nav-link" href="/contato.html">Contato</a> 
+                    <a class="nav-item nav-link" href="./login.html">Entrar</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+    <main class="d-flex align-items-center min-vh-100">
         <div class="container">
-            <div class="card login-card">
+            <div class="card login-card m-3">
                 <div class="row no-gutters">
                     <div class="col-md-7">
                         <img src="./assets/images/imagem-login.jpg" class="login-card-img">
@@ -62,11 +62,11 @@
                                     type="submit">Entrar</button>
                             </form>
 
-                            <a href="" class="text-decoration-none senha-link"><i class='fas'>&#xf023;</i> 
+                            <a href="/recupera.html" class="text-decoration-none senha-link"><i class='fas'>&#xf023;</i> 
                                 Esqueceu sua senha?
                             </a>
                             <div class="alert alert-success mt-4" id="msg-sucesso" role="alert" hidden>
-                                <h4>Seu login foi realizado com sucesso!</h4>
+                                <h5>Seu login foi realizado com sucesso!</h5>
                             </div>
 
                         </div>
@@ -75,12 +75,9 @@
             </div>
         </div>
     </main>
-    <div class="fixed-bottom justify-content-center" style="background-color: #e9973a" id="div-footer">
-        <footer id="footer" style="background-color: #e9973a">
-            FrontEnder © All Rights Reserved<br>
-            Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
+        <footer class="text-center p-1">
+           <a class="text-decoration-none" href="/contato.html">FrontEnder © All Rights Reserved Squad 7™</a>  
         </footer>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

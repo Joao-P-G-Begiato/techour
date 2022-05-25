@@ -50,8 +50,8 @@
                         <label class="form-label" for="confirmacao">Confirmação de Senha*</label>
                         <input class="form-control form-control-sm" id="confirmacao" name="confirmacao" type="password" placeholder="Senha" required><br>
                     </div>
-                    <div class ="col-md-4">
-                        <p> sua senha deve conter: caractéres <b> maiúsculo |</b> <b> minúsculo |</b> <b> especiais (- + _! @ # $% ^ & *.,?) |</b><b> numérico</b>
+                    <div class ="col-md-4" id="span-senha">
+                        <p> sua senha deve conter pelo menos <b class="length">8 caracteres</b> e dentre eles: <b class="upper"> maiúsculo |</b> <b class="lower"> minúsculo |</b> <b class="special"> especiais (- + _! @ # $% ^ & *.,?) |</b><b class="number"> numérico</b>
                 
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                 <h3> Endereço </h3>
                 <div class="row">
                     <label class="form-label" for="cep">CEP*</label>
-                    <div class="col-md-3">
+                    <div class="col-md-3 butao">
                         <input class="form-control form-control-sm " id="cep" name="cep" type="text" placeholder="10200-300" required>
                     </div>
                     <div class="col-md-9">
@@ -100,7 +100,7 @@
                     </div>
                     <div class="col-md-4">
                         <label class="form-label" for="Complemento">Complemento</label>
-                        <input class="form-control form-control-sm" id="Complemento" name="Complemento" type="text" placeholder="Bloco 3 - AP 12" required><br>
+                        <input class="form-control form-control-sm" id="Complemento" name="Complemento" type="text" placeholder="Bloco 3 - AP 12"><br>
                     </div>
                     <div class="col-md-3">
                         <label class="form-label" for="bairro">Bairro*</label>
@@ -122,18 +122,19 @@
                 <input class ="btn btn-outline-dark" type="submit" id="submit">
             </form>
         </main>
-        <div class="fixed-bottom justify-content-center" style="background-color: #e9973a" id="div-footer">
+        <div class="justify-content-center" style="background-color: #e9973a" id="div-footer">
             <footer id="footer" style="background-color: #e9973a">
-                FrontEnder © All Rights Reserved<br>
-                Squad 7™ - Carolina Souza | João Begiato | Juliana Souza | Rafael Jordão
+                FrontEnder © All Rights Reserved - Squad 7™
             </footer>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="./js/models/cadastro-models.js"></script>
-        <script src="./js/views/cadastro-views.js"></script>
-        <script src="./js/controllers/cadastro-controllers.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="./js/models/cadastro-models.js"></script>
+        <script src="./js/views/cadastro-views.js"></script>
+        <script src="./js/views/cadastro-senha-views.js"></script>
+        <script src="js/views/cadastro-views-cep.js"></script>
+        <script src="./js/controllers/cadastro-controllers.js"></script>
     </body>
 </html>

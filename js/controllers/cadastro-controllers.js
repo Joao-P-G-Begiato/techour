@@ -1,8 +1,8 @@
-let cep =""
+// let cep =""
 
 $("#cep-sub").click(function(e){
     e.preventDefault()
-    manipulaCEP($("#cep").val())
+    sanitizaCEP($("#cep").val())
 })
 
 function chamaCEP(cep){
@@ -20,4 +20,9 @@ function chamaCEP(cep){
 $("#senha").keyup(function(){
     validaSenha($("#senha").val())
 })
+
+$("#senha").blur(function(){
+    limpaInfoSenha($("#senha").val())
+})
+
 

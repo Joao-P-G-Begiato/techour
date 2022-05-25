@@ -1,28 +1,29 @@
 form{
     width: 80vw;
-    margin: 0vw 10vw
-}
-
-main{
-    padding: 1rem;
-}
-
-body{
-    padding: 0.05rem;
-}
-
-footer{
-    padding: 0 0 0 1rem;
-}
-
-form{
+    margin: 0vw 10vw;
     color: #e9973A;
     background-color: #111008;
     padding: 2vw;
     border-radius: 10px;
 }
 
+main{
+    padding: 1rem;
+}
+
 .btn{
     background-color: #e9973A;
     color:#111008
+}
+
+#span-senha{
+    display: none;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #e9973A;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #e9973ae8;
 }
